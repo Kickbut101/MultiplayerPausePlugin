@@ -21,14 +21,14 @@ public class MultiplayerPausePlugin extends Plugin{
     public void init(){
         Events.on(PlayerJoin.class, e -> {
              if (Groups.player.size() > 0 && state.serverPaused == true) {
-                Log.info("Someone joined and serverstate was paused - Unpausing server - Plugin");
+                Log.info("[MultiplayerPausePlugin]Someone joined and serverstate was paused - Unpausing server");
                 state.serverPaused = false;
             }
         });
 
         Events.on(PlayerLeave.class, e -> {
             if (Groups.player.size()-1 == 0) {
-                Log.info("Last player left server - Pausing server - Plugin");
+                Log.info("[MultiplayerPausePlugin]Last player left server - Pausing server");
                 state.serverPaused = true;
             }
         });
