@@ -1,0 +1,7 @@
+{
+  "name": "MultiplayerPausePlugin",
+  "author": "Andy",
+  "main": "MultiplayerPausePlugin.MultiplayerPausePlugin",
+  "description": "Compatible with Mindustry 6.0 - A super simple plugin to pause serverstate when players leave",
+  "version": 1.0
+}
